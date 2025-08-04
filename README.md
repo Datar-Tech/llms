@@ -1,6 +1,6 @@
 # LLMs
 
-> A universal LLM API transformation server, initially developed for the [claude-code-router](https://github.com/musistudio/claude-code-router).
+> A universal LLM API transformation server, initially developed for the [claude-code-router](https://github.com/datartech/claude-code-router).
 
 ## How it works
 
