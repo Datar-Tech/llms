@@ -183,6 +183,7 @@ async function sendRequestToProvider(
     headers: {
       Authorization: `Bearer ${provider.apiKey}`,
       ...(config?.headers || {}),
+      ...(fastify._server!.configService.get("OCP_APIM_SUBSCRIPTION_KEY") ? { 'Ocp-Apim-Subscription-Key': fastify._server!.configService.get("OCP_APIM_SUBSCRIPTION_KEY") } : {}),
     },
   });
 
